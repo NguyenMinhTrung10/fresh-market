@@ -47,7 +47,7 @@ export function Hero({ searchTerm, setSearchTerm }) {
 
       <div className="hero-visual">
         <img 
-          src="/images/strawberry.png" 
+          src={`${import.meta.env.BASE_URL || '/'}images/strawberry.png`} 
           alt="Dâu tây tươi mát" 
           className="hero-main-img" 
         />

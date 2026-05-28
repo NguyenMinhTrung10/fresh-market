@@ -7,8 +7,14 @@ import { Product } from '../../domain/entities/Product';
  */
 export class ProductRepository {
   constructor() {
-    // Instantiate entities from mock data source
-    this.products = MOCK_PRODUCTS.map(item => new Product(item));
+    // Instantiate entities from mock data source and resolve base url path for assets
+    const baseUrl = import.meta.env.BASE_URL || '/';
+    this.products = MOCK_PRODUCTS.map(item => {
+      const imageUrl = item.image 
+        ? `${baseUrl}${item.image.startsWith('/') ? item.image.slice(1) : item.image}` 
+        : null;
+      return new Product({ ...item, image: imageUrl });
+    });
   }
 
   /**
