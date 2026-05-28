@@ -169,5 +169,47 @@ export const MOCK_PRODUCTS = [
     },
     benefits: 'Thiết kế giỏ đan mây sang trọng đính kèm thiệp chúc mừng độc bản, kết hợp đa dạng các loại quả mọng tươi ngon.',
     tag: 'Quà biếu sang trọng'
+  },
+  {
+    id: 9,
+    name: 'Thanh Long Ruột Trắng Bình Thuận',
+    price: 35000,
+    oldPrice: 45000,
+    category: 'organic',
+    rating: 4.7,
+    reviewsCount: 14,
+    image: null,
+    emoji: '🐉',
+    fallbackBg: 'linear-gradient(135deg, #11998e, #38ef7d)',
+    origin: 'Bình Thuận, Việt Nam',
+    nutrition: {
+      vitC: '12%',
+      fiber: '3g',
+      iron: '6%',
+      calories: '50 kcal'
+    },
+    benefits: 'Thanh long ruột trắng giòn mát vị ngọt thanh dịu nhẹ, giàu vitamin và nước giúp giải nhiệt thanh lọc cơ thể cực tốt.',
+    tag: 'Hữu cơ sạch'
+  },
+  {
+    id: 10,
+    name: 'Nho hồng nhật',
+    price: 680000,
+    oldPrice: 750000,
+    category: 'import',
+    rating: 5.0,
+    reviewsCount: 22,
+    image: null,
+    emoji: '🍇',
+    fallbackBg: 'linear-gradient(135deg, #ff9a9e, #fecfef)',
+    origin: 'Yamanashi, Nhật Bản',
+    nutrition: {
+      vitC: '10%',
+      sugar: '20g',
+      resveratrol: 'Cao',
+      calories: '75 kcal'
+    },
+    benefits: 'Nho hồng thượng hạng nhập khẩu trực tiếp từ Nhật Bản, vỏ mỏng vị ngọt lịm như mật ong và hương thơm hoa hồng quyến rũ.',
+    tag: 'Nhập khẩu thượng hạng'
   }
 ];
